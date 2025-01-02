@@ -23,7 +23,7 @@ def set_background_image_local(image_path):
         unsafe_allow_html=True
     )
 
-set_background_image_local(r"D:\Streamlit_Session\env\BG d2.jpg")  # Replace with your image path
+set_background_image_local(r"BG d2.jpg")  # Replace with your image path
 
 
 # Load models
@@ -37,9 +37,9 @@ tabs = ["Select Model", "Parkinson's Prediction 🧠", "Liver Prediction 🩸", 
 selected_tab = st.sidebar.selectbox("Choose a Health Prediction Model", tabs)
 
 # Load models
-parkinson_model = load_model('D:/Streamlit_Session/env/Parkinson.pkl')
-liver_model = load_model('D:/Streamlit_Session/env/Indianliverpatient.pkl')
-kidney_model = load_model('D:/Streamlit_Session/env/Kidneyprediction.pkl')
+parkinson_model = load_model('Parkinson.pkl')
+liver_model = load_model('Indianliverpatient.pkl')
+kidney_model = load_model('Kidneyprediction.pkl')
 
 # App configuration
 st.title("Health Prediction App 🩺")
