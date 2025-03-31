@@ -1,6 +1,5 @@
 streamlit
 numpy
-scikit-learn
 pandas
 os
 base64
